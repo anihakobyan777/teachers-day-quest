@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Կայքի կարգավորումներ
-st.set_page_config(page_title="Ուսուցիչների օրվա կվեստ", page_icon="🎓")
+st.set_page_config(page_title="Ուսուցիչների օրվա Քվեստ", page_icon="🎓")
 
 # Տվյալների բազա բոլոր ուսուցիչների համար
 quiz_data = {
@@ -93,7 +93,7 @@ if 'current_teacher' not in st.session_state:
     st.title("🎓 12-րդ ԱԲ")
     st.write("Սիրելի ուսուցիչներ, ձեր շնորհավորանքներն ու անակնկալները ստանալու համար ընտրեք Ձեր անունը ստորև։")
     selected_teacher = st.selectbox("Ընտրեք Ձեր անունը", list(quiz_data.keys()))
-    if st.button("Սկսել Կվեստը"):
+    if st.button("Սկսել Քվեստը"):
         st.session_state.current_teacher = selected_teacher
         st.rerun()
 else:
