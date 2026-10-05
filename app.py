@@ -100,7 +100,7 @@ quiz_data = {
 # Ծրագրի տրամաբանություն
 if 'current_teacher' not in st.session_state:
     st.title("🎓 12-րդ ԱԲ")
-    st.write("Սիրելի ուսուցիչներ, ձեր շնորհավորանքներն ու անակնկալները ստանալու համար ընտրեք Ձեր անունը ստորև։")
+    st.write("Սիրելի ուսուցիչներ, Ձեր շնորհավորանքներն ու անակնկալները ստանալու համար ընտրեք Ձեր անունը ստորև։")
     selected_teacher = st.selectbox("Ընտրեք Ձեր անունը", list(quiz_data.keys()))
     if st.button("Սկսել Քվեստը"):
         st.session_state.current_teacher = selected_teacher
